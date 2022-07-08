@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    background-color: rgb(61, 56, 56);
+}
+
+.box-1 {
+    width: 50%;
+    height: 50vh;
+    background-color: rgb(187, 180, 180);
+    text-align: center;
+    font-size: 3rem;
+    margin: 0 auto; 
+    margin-top: 15vh;
+    padding-top: 20vh;
+    min-width: 300px;
+    min-height: 300px;
+    border-radius: 50%;
+    border: 5px ridge black;
+}
+
+.box-1 button {
+    background-color: black;
+    color: white;
+    width: 30%;
+    font: roboto;
+    font-size: 1.6rem;
+    text-align: center;
+    padding: 0.7em 0;
+    border-radius: 5px;
+    margin-top: .5em;
+}
+
+.box-1 button:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
