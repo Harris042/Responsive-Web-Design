@@ -2,6 +2,7 @@ body {
     margin: 0;
 }
 
+/* ---------------Header--------------- */
 header {
     padding: 2em 0;
     background-color: #f8f8f8;
@@ -11,25 +12,9 @@ header {
 .container {
     max-width: 900px;
     display: flex;
-    /* border: 2px solid pink; */
     margin: 0 auto;
     justify-content: space-between;
     align-items: flex-end;
-}
-
-@media (max-width: 760px) {
-    .container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    header ul {
-        flex-direction: column;
-    }
-
-    header nav li {
-        margin-top: 1em;
-    }
 }
 
 #title {
@@ -84,4 +69,112 @@ header nav a:hover, header nav a:focus {
 
 .current-page:hover, .current-page:focus {
     color: #707070;
+}
+
+@media (max-width: 760px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header ul {
+        flex-direction: column;
+    }
+
+    header nav li {
+        margin-top: 1em;
+    }
+}
+
+/* -----------------Container----------------- */
+#main-container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 900px;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 3vh;
+    margin-bottom: 14vh;
+}
+
+main {
+    width: 65%;
+    margin-left: 1em;
+}
+
+#main-article {
+    width: 100%;
+}
+
+#main-article-image {
+    width: 100%;
+    height: auto;
+}
+
+.article-image {
+    max-width: 150px;
+    width: 150px;
+    height: auto;
+}
+
+.article-recent {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.artilce-recent-main {
+    width: 35%;
+}
+
+.article-recent-secondary {
+    width: 60%;
+    padding: 1vw 1vw 1vw 0;
+}
+
+.article-title {
+    margin-top: 0.4em;
+}
+
+aside {
+    width: 25%;
+    margin-right: 1em;
+}
+
+.widget {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 1vw;
+    border: 1.5vw solid #f8f8f8;
+    margin-bottom: 5vh;
+}
+
+#widget-1-heading, #sidebar-title {
+    margin-top: 2px;
+}
+
+#profile-image {
+    width: 100%;
+    height: auto;
+}
+
+.widget-image {
+    width: 100%;
+    height: auto;
+}
+
+/* ----------------Footer---------------- */
+footer {
+    width: 100%;
+    text-align: center;
+    height: 10.5vh;
+    background-color: #143774;
+    color: white;
+    font-size: 1.6rem;
+    padding-top: 1.5vh;
+}
+
+p {
+    padding: 0;
+    margin: 2px;
 }
