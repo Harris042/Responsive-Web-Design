@@ -41,6 +41,9 @@ header {
 
 .header-link-items {
     margin: 0.6em 0;
+    font-size: 1rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
 }
 
 .header-links {
@@ -57,6 +60,11 @@ header {
     color: #1792D2;
 }
 
+#current-page:hover,
+#current-page:focus {
+    color: #707070
+}
+
 /* ----------------articles---------------- */
 #main-container {
     margin: 2em 0;
@@ -68,9 +76,11 @@ main {
 }
 
 #main-article {
-    padding-bottom: 0.7em;
+    padding-bottom: 2.2em;
     border-bottom: 2px solid #707070;
     margin-bottom: 3em;
+    display: flex;
+    flex-direction: column;
 }
 
 .article {
@@ -106,6 +116,13 @@ main {
 
 .comments {
     margin: 0.3em 0;
+    font-size: 1rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+}
+
+#main-article-comment {
+    margin: 0.5em 0;
 }
 
 strong, .article-read-more, #article-main-link {
@@ -126,4 +143,97 @@ strong, .article-read-more, #article-main-link {
 .article-read-more {
     display: inline-block;
     margin-top: 0.7em;
+}
+
+@media (min-width: 630px) and (max-width: 730px) {
+    #main-article-title {
+        order: -2;
+    }
+
+    #main-article-comment {
+        order: -1;
+        margin-top: -2.3em;
+        text-align: right;
+    }
+
+    #main-article-image {
+        margin: 1em 0;
+    }
+
+    .article-recent-secondary > .comments {
+        margin: 0;
+        position: relative;
+        top: 1.9em;
+        text-align: right;
+    }
+}
+
+@media (min-width: 790px) {
+    
+}
+
+/* -----------------widgets----------------- */
+.widget {
+    width: 100%;
+    border: 1.4em solid #EBEBEB;
+    box-sizing: border-box;
+    padding: 1em;
+}
+
+.widget-image {
+    margin: 1em 0;
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.widget-heading {
+    font-size: 2rem;
+    font-family: 'Lora', serif;
+    font-weight: 500;
+    color: #143774;
+}
+
+.widget-text {
+    font-size: 1.1rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+}
+
+#widget-1 {
+    margin-bottom: 2em;
+}
+
+.widget-2-image {
+    margin-bottom: 0.4em;
+}
+
+.widget-2-text {
+    font-size: 1.2rem;
+    color: #1792D2;
+}
+
+.widget-column {
+    margin-bottom: 0.3em;
+    padding-bottom: 1em;
+    border-bottom: 2px solid #707070;
+}
+
+.widget-column:last-child {
+    padding: 0;
+    border: 0;
+}
+
+/* ---------------footer--------------- */
+footer {
+    box-sizing: border-box;
+    padding-top: 20px;
+    height: 100px;
+    background-color: #143774;
+    color: white;
+    font-size: 1.5rem;
+    font-family: 'Lora', serif;
+    font-weight: 300;
+    text-align: center;
 }
