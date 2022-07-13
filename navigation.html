@@ -5,20 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./navigation.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500;700&display=swap" rel="stylesheet">
     <title>Navigation</title>
 </head>
 <body>
     <header>
         <div class="container">
             <div id="title">
-                <h1>Living the simple life</h1>
-                <p>A blog exploring minimalism in life</p>
+                <h1 id="title-heading">Living the simple life</h1>
+                <p id="title-subheading">A blog exploring minimalism in life</p>
             </div>
-            <nav>
-                <ul>
-                    <li><a href="#" class="current-page">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Recent Posts</a></li>
+            <nav id="navbar">
+                <ul id="header-list">
+                    <li class="header-link-items"><a href="#" class="header-links" id="current-page">Home</a></li>
+                    <li class="header-link-items"><a href="#" class="header-links">About</a></li>
+                    <li class="header-link-items"><a href="#" class="header-links">Recent Posts</a></li>
                 </ul>
             </nav>
         </div>
@@ -28,28 +34,28 @@
         <main>
             <article class="article" id="main-article">
                 <h2 class="article-title" id="main-article-title">Finding simplicity in life</h2>
-                <img src="./images/simplicity.jpg" alt="A women enjoying sunlight" id="main-article-image">
+                <img src="./images/simplicity.jpg" alt="A women enjoying sunlight" id="main-article-image" class="article-image">
                 <p class="comments">24th Jan, 2021  |  3 comments</p>
-                <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum explicabo, 
-                                consectetur illum tenetur nulla exercitationem porro doloribus consequatur voluptatem 
+                <p class="text"><strong>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</strong> Harum explicabo, 
+                                consectetur <a href="#" id="article-main-link">illum tenetur nulla exercitationem porro doloribus</a> consequatur voluptatem 
                                 optio placeat consequuntur, fugiat odio architecto.</p>
                 <a href="#" class="article-read-more">Read more</a>
             </article>
 
-            <article class="article-recent">
+            <article class="article article-recent">
                 <div class="article-recent-main">
                     <h2 class="article-title">Keeping cooking simple</h2>
                     <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, nulla 
                         sit fugiat, rem sapiente reprehenderit provident architecto eum pariatur blanditiis 
                         quidem, facere expedita id beatae.</p>
-                        <a href="#" class="article-read-more">Read more</a>
+                    <a href="#" class="article-read-more">Read more</a>
                     </div>
                     <div class="article-recent-secondary">
                         <img src="./images/food.jpg" alt="A plate with leaf salad on it" class="article-image">
                         <p class="comments">24th Jan, 2021  |  3 comments</p>
                     </div>
             </article>
-            <article class="article-recent">
+            <article class="article article-recent">
                 <div class="article-recent-main">
                     <h2 class="article-title">Simplicity and work</h2>
                     <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, nulla 
@@ -62,7 +68,7 @@
                     <p class="comments">24th Jan, 2021  |  3 comments</p>
                 </div>
             </article>
-            <article class="article-recent">
+            <article class="article article-recent">
                 <div class="article-recent-main">
                     <h2 class="article-title">Simple decoration</h2>
                     <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, nulla 
