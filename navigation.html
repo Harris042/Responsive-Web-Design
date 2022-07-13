@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@300;500&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
     <title>Navigation</title>
 </head>
 <body>
@@ -35,7 +35,7 @@
             <article class="article" id="main-article">
                 <h2 class="article-title" id="main-article-title">Finding simplicity in life</h2>
                 <img src="./images/simplicity.jpg" alt="A women enjoying sunlight" id="main-article-image" class="article-image">
-                <p class="comments">24th Jan, 2021  |  3 comments</p>
+                <p class="comments" id="main-article-comment">24th Jan, 2021  |  3 comments</p>
                 <p class="text"><strong>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</strong> Harum explicabo, 
                                 consectetur <a href="#" id="article-main-link">illum tenetur nulla exercitationem porro doloribus</a> consequatur voluptatem 
                                 optio placeat consequuntur, fugiat odio architecto.</p>
@@ -85,23 +85,24 @@
 
         <aside>
             <div class="widget" id="widget-1">
-                <h2 id="widget-1-heading">About me</h2>
+                <h2 id="widget-1-heading" class="widget-heading">About me</h2>
                 <img src="./images/profile_pic.jpg" alt="profile picture of the website owner" class="widget-image" id="profile-image">
-                <p id="widget1-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                                    Reprehenderit, odit.</p>
+                <p id="widget1-text" class="widget-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo aut ipsum inventore quod culpa. 
+                                    Esse non sint adipisci omnis velit Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
             </div>
             <div class="widget" id="widget-2">
-                <h2 id="sidebar-title">Recent posts</h2>
+                <h2 id="sidebar-title" class="widget-heading">Recent posts</h2>
                 <div class="widget-column" id="column-1">
-                    <img src="./images/food.jpg" alt="A plate with leaf salad on it" class="widget-image">
-                    <p class="widget-text">Keep cooking simple</p>
+                    <img src="./images/food.jpg" alt="A plate with leaf salad on it" class="widget-image widget-2-image">
+                    <p class="widget-text widget-2-text">Keep cooking simple</p>
                 </div>
                 <div class="widget-column" id="column-2">
-                    <img src="./images/desk.jpg" alt="A desk setup with a brown chair and white table" class="widget-image">
-                    <p class="widget-text">Simplicity and work</p>
+                    <img src="./images/desk.jpg" alt="A desk setup with a brown chair and white table" class="widget-image widget-2-image">
+                    <p class="widget-text widget-2-text">Simplicity and work</p>
+                </div>
                 <div class="widget-column" id="column-3">
-                    <img src="./images/decorations.jpg" alt="3 white flower pots with green leaf plants planted" class="widget-image">
-                    <p class="widget-text">Simple decoration</p>
+                    <img src="./images/decorations.jpg" alt="3 white flower pots with green leaf plants planted" class="widget-image widget-2-image">
+                    <p class="widget-text widget-2-text">Simple decoration</p>
                 </div>
             </div>
         </aside>
