@@ -10,11 +10,11 @@ header {
 }
 
 #title-heading {
-    /* color: #143774; */
-    color: red;
+    color: #143774;
     font-size: 2.2rem;
     font-family: 'Lora', serif;
     font-weight: 300;
+    transform: scaleX(0.95);
 }
 
 #title-subheading {
@@ -22,6 +22,7 @@ header {
     font-size: 1.3rem;
     font-family: 'Ubuntu', sans-serif;
     font-weight: 500;
+    transform: scaleX(0.97);
 }
 
 .container {
