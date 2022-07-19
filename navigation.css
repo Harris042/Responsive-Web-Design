@@ -69,7 +69,7 @@ header {
     color: #707070
 }
 
-@media (min-width: 375px) and (max-width: 730px) {
+@media (min-width: 440px) and (max-width: 730px) {
     .container {
         padding-left: 1em;
         padding-right: 1em;
